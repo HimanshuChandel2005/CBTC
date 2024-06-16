@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
-// Structure to represent a bank account
-struct BankAccount {
+ {
     int accountNumber;
     char accountType[50];
     float balance;
 };
 
-// Function to create a new bank account
-struct BankAccount createAccount() {
+ {
     struct BankAccount account;
 
     printf("Enter account number: ");
@@ -24,8 +22,7 @@ struct BankAccount createAccount() {
     return account;
 }
 
-// Function to deposit funds into an account
-void deposit(struct BankAccount *account) {
+{
     float amount;
     printf("Enter amount to deposit: ");
     scanf("%f", &amount);
@@ -35,8 +32,7 @@ void deposit(struct BankAccount *account) {
     printf("Deposit successful!\n");
 }
 
-// Function to withdraw funds from an account
-void withdraw(struct BankAccount *account) {
+{
     float amount;
     printf("Enter amount to withdraw: ");
     scanf("%f", &amount);
@@ -49,15 +45,13 @@ void withdraw(struct BankAccount *account) {
     }
 }
 
-// Function to check the balance of an account
-void checkBalance(struct BankAccount account) {
+{
     printf("Account Number: %d\n", account.accountNumber);
     printf("Account Type: %s\n", account.accountType);
     printf("Balance: %.2f\n", account.balance);
 }
 
-// Function to calculate interest based on account type
-float calculateInterest(struct BankAccount account) {
+ {
     float interestRate;
 
     if (strcmp(account.accountType, "Savings") == 0) {
